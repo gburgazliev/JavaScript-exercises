@@ -1,4 +1,4 @@
-function solve(input) {
+function divisibleByNine(input) {
     const n = Number(input[0]);
     const m = Number(input[1]);
     let sum = 0;
@@ -12,6 +12,6 @@ function solve(input) {
     console.log(`The sum: ${sum}`);
     console.log(numbers);
   }
-  solve(['100', '200']);
+  divisibleByNine(['100', '200']);
    
   
