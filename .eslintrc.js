@@ -15,5 +15,6 @@ module.exports = {
     'prefer-template': 'off',
     'no-plusplus': 'off',
     'no-mixed-operators': 'off',
+    'consistent-return': 'off',
   },
 };
