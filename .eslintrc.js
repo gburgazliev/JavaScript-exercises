@@ -14,5 +14,6 @@ module.exports = {
     'no-console': 'off',
     'prefer-template': 'off',
     'no-plusplus': 'off',
+    'no-mixed-operators': 'off',
   },
 };
