@@ -13,7 +13,7 @@ function phoneBill(input) {
     additionalTaxes = 0;
     console.log(`${additionalMessages} additional messages for ${additionalMessagesPrice.toFixed(2)} levas`);
   } else {
-    console.log(`${additionalMessages} additional messages for ${Number(additionalMessagesPrice.toFixed(2))} levas`);
+    console.log(`${additionalMessages} additional messages for ${(additionalMessagesPrice.toFixed(2))} levas`);
     // additionalMessagesPrice = (messages - 20) * 0.06;
     additionalTaxes += additionalMessagesPrice;
   }

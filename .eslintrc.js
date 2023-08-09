@@ -12,6 +12,9 @@ module.exports = {
   },
   rules: {
     'no-console': 'off',
+    'func-names': 'off',
+    'prefer-arrow-callback': 'off',
+    'eqeqeq': 'off',
     'prefer-template': 'off',
     'no-plusplus': 'off',
     'no-mixed-operators': 'off',
