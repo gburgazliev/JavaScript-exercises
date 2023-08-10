@@ -11,6 +11,7 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
+    'default-case': 'off',
     'no-console': 'off',
     'func-names': 'off',
     'prefer-arrow-callback': 'off',
