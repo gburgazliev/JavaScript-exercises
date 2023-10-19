@@ -13,6 +13,7 @@ module.exports = {
   rules: {
     'default-case': 'off',
     'no-console': 'off',
+    'no-lonely-if': 'off',
     'func-names': 'off',
     'prefer-arrow-callback': 'off',
     'eqeqeq': 'off',
