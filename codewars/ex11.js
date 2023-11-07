@@ -5,4 +5,4 @@ function findNeedle(haystack) {
     }
   }
 }
-findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]);
+findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']);

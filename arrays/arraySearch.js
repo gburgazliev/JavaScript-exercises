@@ -1,5 +1,5 @@
 function arraySearch(input) {
-  const arr = input[0].split(',').map(Number);;
+  const arr = input[0].split(',').map(Number);
   arr.sort();
   const missingNumbers = [];
   for (let i = 1; i <= arr.length; i++) {

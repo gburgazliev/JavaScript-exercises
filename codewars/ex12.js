@@ -1,4 +1,4 @@
 function square(number) {
-console.log(number*number)
+  console.log(number * number);
 }
-square(3)
+square(3);

@@ -16,7 +16,7 @@ module.exports = {
     'no-lonely-if': 'off',
     'func-names': 'off',
     'prefer-arrow-callback': 'off',
-    'eqeqeq': 'off',
+    eqeqeq: 'off',
     'prefer-template': 'off',
     'no-plusplus': 'off',
     'no-mixed-operators': 'off',

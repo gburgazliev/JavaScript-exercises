@@ -1,8 +1,8 @@
 function findMissingNumber(sequence) {
-  let arr = sequence.split(' ').map(Number);
-  let max = Math.max(...arr);
-  let min = Math.min(...arr);
-  let list = [];
+  const arr = sequence.split(' ').map(Number);
+  const max = Math.max(...arr);
+  const min = Math.min(...arr);
+  const list = [];
   for (let i = 1; i <= max; i++) {
     if (!arr.includes(i)) {
       list.push(i);

@@ -1,7 +1,7 @@
 function repeatingNumber(n) {
   const arr = [];
   for (let i = 0; i < n; i++) {
-    let numbers = [1, 2, 3, 1, 2, 2, 1];
+    const numbers = [1, 2, 3, 1, 2, 2, 1];
     arr.push(numbers[i]);
   }
   const obj = {};
@@ -10,7 +10,7 @@ function repeatingNumber(n) {
   });
   let biggest = 0;
   let mostRepeated;
-  for (let counter in obj) {
+  for (const counter in obj) {
     if (obj[counter] > biggest) {
       biggest = obj[counter];
       mostRepeated = counter;
