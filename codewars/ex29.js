@@ -9,8 +9,7 @@ function comp(array1, array2) {
   array2.map((element) => newArr.push(Math.sqrt(element)));
   if (array1.sort().join(',') === newArr.sort().join(',')) {
     return true;
-} else {
-    return false;
-}
+  }
+  return false;
 }
 console.log(comp([], []));

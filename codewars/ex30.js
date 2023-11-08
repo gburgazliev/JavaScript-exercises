@@ -9,4 +9,4 @@ function deleteNth(arr, n) {
   });
   console.log(newArr);
 }
-deleteNth([1,2,3,1,2,1,2,3], 2);
+deleteNth([1, 2, 3, 1, 2, 1, 2, 3], 2);

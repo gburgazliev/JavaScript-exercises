@@ -22,4 +22,4 @@ function spinAround(turns) {
     console.log((Math.floor(result / 360)));
   }
 }
-spinAround(["right","left","right","right","right","right","right","left","right","right","left","left","left","left","left","right","right","right","right","right","right","right","right","left","left","left","right","right","left","right"]);
+spinAround(['right', 'left', 'right', 'right', 'right', 'right', 'right', 'left', 'right', 'right', 'left', 'left', 'left', 'left', 'left', 'right', 'right', 'right', 'right', 'right', 'right', 'right', 'right', 'left', 'left', 'left', 'right', 'right', 'left', 'right']);

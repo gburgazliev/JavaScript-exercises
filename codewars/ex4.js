@@ -8,4 +8,4 @@ function twoSort(s) {
   output = output.substring(0, output.length - 3);
   console.log(output);
 }
-twoSort(["bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps"]);
+twoSort(['bitcoin', 'take', 'over', 'the', 'world', 'maybe', 'who', 'knows', 'perhaps']);

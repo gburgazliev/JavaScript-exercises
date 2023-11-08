@@ -1,5 +1,5 @@
 function gooseFilter(birds) {
-  const geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  const geese = ['African', 'Roman Tufted', 'Toulouse', 'Pilgrim', 'Steinbacher'];
   const arr = [];
   for (let i = 0; i < birds.length; i++) {
     let isGoose = false;
@@ -15,4 +15,4 @@ function gooseFilter(birds) {
 
   console.log(arr);
 }
-gooseFilter(["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]);
+gooseFilter(['African', 'Roman Tufted', 'Toulouse', 'Pilgrim', 'Steinbacher']);

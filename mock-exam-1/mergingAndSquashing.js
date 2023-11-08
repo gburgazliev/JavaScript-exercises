@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let input = ['-2', '-10', '0', '-1', '-3'];
 let print = this.print || console.log;
 let gets = this.gets || ((arr, index) => () => arr[index++])(input, 0);
@@ -32,3 +33,24 @@ for (let k = 0; k < arr.length; k++) {
   }
 }
 console.log(resultB.join(' '));
+=======
+function mergingAndSquashing(number) {
+  const n = 4;
+  for (let i = 0; i < n; i++) {
+    let strEven = String;
+    let strOdd = String;
+    if (number[i] % 2 === 0) {
+      strEven = number[i].toString();
+      console.log(strEven[1]);
+    }
+    if (number[i] % 2 !== 0) {
+      strOdd = number[i].toString();
+      console.log(strOdd[0]);
+    }
+  }
+}
+mergingAndSquashing([12,
+  23,
+  34,
+  45]);
+>>>>>>> 197aebff9026ac41d37003f2fff309be9b68324a
