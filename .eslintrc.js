@@ -21,5 +21,6 @@ module.exports = {
     'no-plusplus': 'off',
     'no-mixed-operators': 'off',
     'consistent-return': 'off',
+    'no-restricted-syntax': 'off',
   },
 };
