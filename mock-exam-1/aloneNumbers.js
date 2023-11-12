@@ -16,11 +16,9 @@ function aloneNumbers(arr, n) {
         }
       }
     }
-    newArr.push(arr[i])
+    newArr.push(arr[i]);
   }
-
-
   return newArr;
 }
-let result = aloneNumbers(arr, n)
+let result = aloneNumbers(arr, n);
 console.log([result]);
