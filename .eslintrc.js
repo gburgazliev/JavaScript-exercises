@@ -22,5 +22,6 @@ module.exports = {
     'no-mixed-operators': 'off',
     'consistent-return': 'off',
     'no-restricted-syntax': 'off',
+    'no-restricted-globals': 'off',
   },
 };
