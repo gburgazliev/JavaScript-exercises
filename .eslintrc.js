@@ -16,6 +16,8 @@ module.exports = {
     'no-lonely-if': 'off',
     'func-names': 'off',
     'prefer-arrow-callback': 'off',
+    'no-param-reassign': 'off',
+    'prefer-destructuring': 'off',
     eqeqeq: 'off',
     'prefer-template': 'off',
     'no-plusplus': 'off',
