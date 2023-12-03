@@ -1,12 +1,15 @@
-let input = ['3', '3', '9'];
+let input = ['2', '3', '8'];
 let print = this.print || console.log;
 let gets = this.gets || ((arr, index) => () => arr[index++])(input, 0);
 let smallBottles = +gets();
 let bigBottles = +gets() * 5;
-let capacity = +gets();
-let totalCapacity = bigBottles + smallBottles;
-if (totalCapacity < capacity || capacity - bigBottles < 0) {
-    console.log(-1);
+let truckCapacity = +gets();
+while (bigBottles > truckCapacity) {
+  bigBottles -= 5;
+}
+let smallBottlesNeeded = truckCapacity - bigBottles;
+if (smallBottles < smallBottlesNeeded) {
+  console.log(-1);
 } else {
-    console.log(capacity - bigBottles)
+  console.log(truckCapacity - bigBottles);
 }
