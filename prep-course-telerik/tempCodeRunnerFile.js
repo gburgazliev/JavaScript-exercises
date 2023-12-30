@@ -1,1 +1,1 @@
-checkIfNumber(num1, num2);
+%

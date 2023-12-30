@@ -77,6 +77,6 @@ console.log(add(10, 10));
 console.log(subtract(10, 5));
 console.log(multiply(10, 5));
 console.log(divide(10, 5));
-console.log(addAll(1, 3, 4, 5));
+console.log(addAll(1, 4, 4, 5));
 console.log(calculator(10, 10, add));
 console.log(updatedCalculator(10, 10, subtract, add, multiply));
