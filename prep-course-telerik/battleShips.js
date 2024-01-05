@@ -33,49 +33,47 @@ for (let k = 0; k < R; k++) {
 }
 
 player2.reverse();
-console.log(player2)
 player2.forEach((el) => {
   el.reverse();
 });
-console.log(player2)
 
-// let command;
-// let currentBoard = player2;
-// let playerOneBoats = 0;
-// let playerTwoBoats = 0;
-// while ((command = gets()) && command !== 'END') {
-//   let x;
-//   let y;
-//   [command, x, y] = command.split(' ');
-//   let row = +x;
-//   let col = +y;
-//   if (currentBoard[row][col] === 1) {
-//     currentBoard[row][col] = 'x';
-//     console.log('Booom');
-//   } else if (currentBoard[row][col] === 'x') {
-//     console.log('You already shot there!');
-//   } else if (currentBoard[row][col] === 0) {
-//     currentBoard[row][col] = 'x';
-//     console.log('Missed');
-//   }
-//   if (currentBoard === player1) {
-//     currentBoard = player2;
-//   } else {
-//     currentBoard = player1;
-//   }
-// }
-// player1.forEach((el) => {
-//   el.forEach((element) => {
-//     if (element === 1) {
-//       playerOneBoats++;
-//     }
-//   });
-// });
-// player2.forEach((el) => {
-//   el.forEach((element) => {
-//     if (element === 1) {
-//       playerTwoBoats++;
-//     }
-//   });
-// });
-// console.log(`${playerOneBoats}:${playerTwoBoats}`);
+let command;
+let currentBoard = player2;
+let playerOneBoats = 0;
+let playerTwoBoats = 0;
+while ((command = gets()) && command !== 'END') {
+  let x;
+  let y;
+  [command, x, y] = command.split(' ');
+  let row = +x;
+  let col = +y;
+  if (currentBoard[row][col] === 1) {
+    currentBoard[row][col] = 'x';
+    console.log('Booom');
+  } else if (currentBoard[row][col] === 'x') {
+    console.log('You already shot there!');
+  } else if (currentBoard[row][col] === 0) {
+    currentBoard[row][col] = 'x';
+    console.log('Missed');
+  }
+  if (currentBoard === player1) {
+    currentBoard = player2;
+  } else {
+    currentBoard = player1;
+  }
+}
+player1.forEach((el) => {
+  el.forEach((element) => {
+    if (element === 1) {
+      playerOneBoats++;
+    }
+  });
+});
+player2.forEach((el) => {
+  el.forEach((element) => {
+    if (element === 1) {
+      playerTwoBoats++;
+    }
+  });
+});
+console.log(`${playerOneBoats}:${playerTwoBoats}`);
