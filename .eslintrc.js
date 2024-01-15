@@ -12,6 +12,9 @@ module.exports = {
   },
   rules: {
     'default-case': 'off',
+    'no-prototype-builtins': 'off',
+    'arrow-body-style': 'off',
+    'object-shorthand': 'off',
     'no-console': 'off',
     'no-lonely-if': 'off',
     'func-names': 'off',

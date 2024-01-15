@@ -4,39 +4,40 @@ let input = ['2 2',
   "1 0",
   "1 1",
   'Shoot 1 1',
-//   'Shoot 0 1',
-//   'Shoot 0 0',
-//   'Shoot 0 0',
-//   'Shoot 1 1',
-//   'Shoot 1 0',
-//   "Shoot 1 1",
+  'Shoot 0 1',
+  'Shoot 0 0',
+  'Shoot 0 0',
+  'Shoot 1 1',
+  "Shoot 1 0",
 //   "Shoot 1 1",
   'END'];
 let print = this.print || console.log;
 let gets = this.gets || ((arr, index) => () => arr[index++])(input, 0);
-
-let R;
-let C;
+let R; let C;
+function findBoatsCount(player, counter) {
+  player.forEach((el) => {
+    el.forEach((element) => {
+      if (element === 1) {
+        counter++;
+      }
+    });
+  });
+  return counter;
+}
+function fillMatrix(player) {
+  for (let k = 0; k < R; k++) {
+    player[k] = gets().split(' ').map(Number);
+  }
+  return player;
+}
 [R, C] = gets().split(' ');
-let player1 = [];
-let player2 = [];
+let player1 = []; let player2 = [];
 for (let i = 0; i < R; i++) {
   player1[i] = Array.from({ length: C });
   player2[i] = Array.from({ length: C });
 }
-for (let j = 0; j < R; j++) {
-  player1[j] = gets().split(' ').map(Number);
-}
-
-for (let k = 0; k < R; k++) {
-  player2[k] = gets().split(' ').map(Number);
-}
-
-player2.reverse();
-player2.forEach((el) => {
-  el.reverse();
-});
-
+fillMatrix(player1); fillMatrix(player2);
+player2.reverse(); player2.forEach((el) => { el.reverse(); });
 let command;
 let currentBoard = player2;
 let playerOneBoats = 0;
@@ -56,24 +57,6 @@ while ((command = gets()) && command !== 'END') {
     currentBoard[row][col] = 'x';
     console.log('Missed');
   }
-  if (currentBoard === player1) {
-    currentBoard = player2;
-  } else {
-    currentBoard = player1;
-  }
+  currentBoard === player1 ? currentBoard = player2 :  currentBoard = player1;
 }
-player1.forEach((el) => {
-  el.forEach((element) => {
-    if (element === 1) {
-      playerOneBoats++;
-    }
-  });
-});
-player2.forEach((el) => {
-  el.forEach((element) => {
-    if (element === 1) {
-      playerTwoBoats++;
-    }
-  });
-});
-console.log(`${playerOneBoats}:${playerTwoBoats}`);
+console.log(`${findBoatsCount(player1, playerOneBoats)}:${findBoatsCount(player2, playerTwoBoats)}`);
