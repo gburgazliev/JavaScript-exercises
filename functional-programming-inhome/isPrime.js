@@ -1,0 +1,1 @@
+export let isPrime = (item) => item.hasOwnProperty('type') && item['type'] === 'prime'
