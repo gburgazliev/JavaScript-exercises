@@ -12,6 +12,7 @@ module.exports = {
   },
   rules: {
     'default-case': 'off',
+    'array-callback-return': 'off',
     'arrow-parens': 'off',
     'no-prototype-builtins': 'off',
     'arrow-body-style': 'off',
@@ -34,6 +35,8 @@ module.exports = {
     'no-continue': 'off',
     'prefer-template': 'off',
     'no-plusplus': 'off',
+    'no-var': 'off',
+    'vars-on-top': 'off',
     'no-mixed-operators': 'off',
     'consistent-return': 'off',
     'no-restricted-syntax': 'off',

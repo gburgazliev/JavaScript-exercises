@@ -1,6 +1,6 @@
 let input = ['omg', 'omg'];
-let print = this.print || console.log;
-let gets = this.gets || ((arr, index) => () => arr[index++])(input, 0);
+let print = console.log;
+let gets = ((arr, index) => () => arr[index++])(input, 0);
 let strOne = gets().split('');
 let strTwo = gets().split('');
 
