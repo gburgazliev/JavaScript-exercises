@@ -15,23 +15,13 @@ const modifiedArr = (arr) => {
 
     binary = Array.from(binary);
     if (numIndex % 2) {
-      binary = binary.map((el, index) => {
-        if (index % 2 === 0) {
-          return el;
-        }
-      });
-    } else {
-      binary = binary.map((el, index) => {
-        if (index % 2 !== 0) {
-          return el;
-        }
-      });
+      return binary.filter((el, index) => index % 2 === 0).join('');
     }
-    return binary.join('');
+    return binary.filter((el, index) => index % 2 !== 0).join('');
   });
 };
 
-let result = modifiedArr(numArr).join('');
+const result = modifiedArr(numArr).join('');
 console.log(result);
-result = modifiedArr(numArr2).join('');
-console.log(result);
+// result = modifiedArr(numArr2).join('');
+// console.log(result);
